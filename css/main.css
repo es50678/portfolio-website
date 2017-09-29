@@ -1,0 +1,242 @@
+/* BASE STYLES */
+body{
+    background-color: #daecf3;
+    font-family: "Roboto", sans-serif;
+}
+
+.full-width{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.half-width{
+    width: 600px;
+    float: left;
+}
+
+.third-width{
+    width: 400px;
+    float: left;
+}
+
+    /* fixed heights */
+header, footer{
+    height: 100px;
+}
+
+#home, #contact, #skills{
+    height: 800px;
+}
+
+#about{
+    height: 500px;
+}
+
+/* HEADER */
+header{
+    background-color: #175576;
+}
+
+header img {
+    padding-top: 20px;
+}
+
+header h1{
+    float: right;
+    padding-right: 50px;
+    margin-bottom: 0px;
+    color: #ffffff;
+    font-family: "Patua One", serif;
+    font-size: 40px;
+}
+
+nav{
+    float: right;
+    margin: 20px 10px 0 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 130px;
+    border: black 2px solid;
+    background-color: #4ba3c3;
+    text-align: center;
+    padding: 5px 0px;
+    margin: 0 -3px;
+}
+
+nav ul li a {
+    font-family: "Patua One", serif;
+    text-transform: uppercase;
+    text-decoration: initial;
+    font-size: 21px;
+    color: #fefefe;
+}
+
+/* HOME */
+
+#home{
+    background-color: #1ba5b8;
+}
+
+#home .full-width{
+    padding-top: 100px;
+}
+
+#home h2{
+    font-weight: 700;
+    font-size: 50px;
+    font-style: italic;
+    color: #daecf3;
+}
+
+#home h3{
+    font-weight: 300;
+    font-size: 50px;
+    font-style: italic;
+    color: #daecf3;
+    padding-left: 200px;
+}
+
+#home p{
+    margin-top: 100px;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 36px;
+    color: #daecf3;
+    padding-left: 450px;
+}
+
+/* ABOUT */
+
+#about h3 {
+    font-family: "Patua One", serif;
+    font-size: 30px;
+    width: 130px;
+    margin-top: 55px;
+}
+
+#about p{
+    font-weight: 400;
+    font-size: 22px;
+    width: 400px;
+    margin-top: 70px;
+}
+
+#about img{
+    margin-top: 150px;
+}
+
+/* SKILLS */
+
+#skills {
+    background-color: #1ba5b8;
+}
+
+#skills .third-width{
+    margin: 70px 0;
+}
+
+#skills h3{
+    font-family: "Patua One", serif;
+    font-size: 30px;
+    color: white;
+    width: 150px;
+    margin-top: 50px;
+}
+
+#skills img {
+    height: 150px;
+    margin-left: 125px;
+}
+
+#skills h4{
+    margin-top: 40px;
+    font-family: "Patua One", serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+#skills p{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    height: 200px;
+    width: 300px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#skills button{
+    height: 35px;
+    width: 150px;
+    display: block;
+    margin: 0px auto;
+    background-color: #54defd;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#skills a{
+    font-family: "Roboto", sans-serif;
+    text-decoration: initial;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    clear: both;
+    margin-top: 20px;
+}
+
+/* CONTACT */
+
+#contact h3{
+    font-family: "Patua One", serif;
+    font-size: 30px;
+    margin-top: 150px;
+    margin-bottom: 75px;
+}
+
+#contact p{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#contact .form-cont{
+    border-radius: 5%;
+    background-color: #1ba5b8;
+    height: 450px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+#contact .form-cont h3{
+    padding: 30px 0 0 0;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#contact .form-group {
+    margin: 25px auto;
+    width: 250px;
+    text-align: center;
+}
+
+#contact #inputComment{
+    height: 150px;
+}
+
+#contact input{
+    text-align: center;
+}
+
+/* SOCIAL MEDIA */
+
+.social-m{
+    padding: 70px 0;
+}
+
+.social-m a{
+    margin-right: 75px;
+}
