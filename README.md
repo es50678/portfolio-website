@@ -36,6 +36,12 @@ To deploy the website to GitHub Pages, follow these steps:
 2. Deploy to GitHub Pages:
   - commit changes to branch `gh-pages`
 
+
+To deploy to s3:
+```bash
+❯ aws s3 cp --recursive . s3://es50678-portfolio.com --exclude ".git/*" --exclude "node_modules/*" --exclude "README.md" --exclude "LICENSE" --exclude "package.json" --exclude "package-lock.json" --exclude "tsconfig.json"
+```
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
