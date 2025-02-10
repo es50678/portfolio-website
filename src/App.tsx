@@ -10,11 +10,17 @@ function ListItem(props: { animal: string }) {
 
 function List(props: { animals: string[] }) {
   return (
-    <ul>
-      {props.animals.map((animal) => {
-        return <ListItem key={animal} animal={animal} />;
-      })}
-    </ul>
+    <>
+      {!props.animals && <div>Loading...</div>}
+      {props.animals.length === 0 && <div>No animals found</div>}
+      {props.animals.length > 0 && (
+        <ul>
+          {props.animals.map((animal) => {
+            return <ListItem key={animal} animal={animal} />;
+          })}
+        </ul>
+      )}
+    </>
   );
 }
 
@@ -22,10 +28,10 @@ function ListOfAnimalsWithL(props: { animals: string[] }) {
   return (
     <ul>
       {props.animals.map((animal) => {
-        return animal.startsWith("L") ? <ListItem key={animal} animal={animal} /> : null;
+        return animal.startsWith('L') ? <ListItem key={animal} animal={animal} /> : null;
       })}
     </ul>
-  )
+  );
 }
 
 function Animals() {
